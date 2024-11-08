@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзыв</title>
+
+    <style>
+           a {
+              text-decoration: none;
+              color: #9FEE00;
+           }
+
+          .button_1 {
+          border:none;
+          color: #F47983;
+          text-align: center;
+
+          font-size: 14px;
+          cursor: pointer;
+
+          z-index: 1;
+          background-color: White;
+          }
+      </style>
+</head>
+<body>
+
+<div style="position:fixed; top:0%; left:0%; right:0%; z-index:2;">
+    <hr style='position:fixed; width:100%; top:-10px;' color="#F47983" size="120">
+    <div style="position:fixed; top:50px; right:100px" >
+        <a class="button_1" style="padding: 8px 15px;" href="../web_project/index.html">Главная</a>
+        <a class="button_1" style="padding: 8px 15px;" href="../web_project/menu.html">Меню</a>
+        <a class="button_1" style="padding: 8px 15px;" href="../web_project/order.html">Заказ</a>
+        <a class="button_1" style="padding: 8px 15px;" href="../web_project/recall.html"><b>Отзыв</b></a>
+        <a class="button_1" style="padding: 8px 15px;" href="../web_project/add.html">Доп</a>
+    </div>
+    <img style='position:fixed; left:-18px; top:-8px' height="150" src="../web_project/images/logo.png">
+</div>
+
+<div align="center" style='position:relative; width:100%; top:150px;'>
+<h3 align="center">Отзыв</h3>
+    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <input type="hidden"  name="q" value="search">
+        <p>Фамилия: <input type="Text" name="second_name" size=20  value="Евсеев"></p>
+        <p>Имя: <input type="Text" name="first_name" size=20  value="Матвей"></p>
+        <p>Дата рождения: <input type="date" name="user_date_born"  value='2000-01-01'></p>
+        <p>Сет, который вы заказывали:
+            <select name="set_of_recall">
+                <OPTION value="samurai">Самурай</OPTION>
+                <OPTION value="cegun">Сёгун</OPTION>
+                <OPTION value="krest">Крестьянин</OPTION>
+            </select>
+        </p>
+        <p>Мобильный телефон для связи: <input type="tel" name="phone_number" size=20  value="+79300000000" ></p>
+        <p>Электронная почта для связи: <input type="email" name="email" size=20  value="e@gmail.com"></p>
+        <p>Ваша оценка:
+            <input type="Radio" name="recall_value" value="2">Плохо
+            <input type="Radio" name="recall_value" value="3">Нормально
+            <input type="Radio" name="recall_value" value="4">Хорошо
+            <input type="Radio" name="recall_value" value="5" checked>Отлично
+        </p>
+        <p>Дата отправки сообщения: <input type="date" name="user_date_send"  value='2024-11-06'></p>
+        <p>
+            <input type="Reset"  name="Reset"  value="Обновить">
+            <input type="Submit" name="submit"  value="Отправить">
+        </p>
+    </form>
+</div>
+
+<div style="position:fixed; top:90%; left:0%; right:0%; z-index:2;">
+    <hr style='position:absolute; width:100%;;' color="#F47983" size="100">
+    <p style="position:absolute; left:5%; top:30px; color: White" >email для связи с разработчиком: <a href="mailto:skdisy@yandex.ru" target="_blank"> skdisy@yandex.ru</a></p>
+    <p style="position:absolute; left:85%; top:30px; color: White" >телеграм разработчика: <a href="https://t.me/skdisu_work" target="_blank">skdisu_work</a></p>
+</div>
+
+</body>
+</html>
