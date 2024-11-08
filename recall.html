@@ -5,12 +5,23 @@
     <title>Отзыв</title>
 
     <style>
-           a {
-              text-decoration: none;
-              color: #9FEE00;
-           }
+           input {
+            border: 2px solid #F47983;
+            border-radius: 4px;
+         }
 
-          .button_1 {
+
+         select {
+            border: 2px solid #F47983;
+            border-radius: 4px;
+         }
+
+         a {
+            text-decoration: none;
+            color: #9FEE00;
+         }
+
+        .button_1 {
           border:none;
           color: #F47983;
           text-align: center;
@@ -20,7 +31,29 @@
 
           z-index: 1;
           background-color: White;
-          }
+        }
+        .button_2 {
+          border: 2px solid #C93756;
+          color: #C93756;
+          text-align: center;
+
+          font-size: 14px;
+          cursor: pointer;
+
+          z-index: 1;
+          background-color: White;
+        }
+
+        .back {
+        border: 5px solid #C93756;
+        color: #C93756;
+        width:40%;
+
+        font-size: 18px;
+
+        z-index: 1;
+        background-color: White;
+        }
       </style>
 </head>
 <body>
@@ -38,8 +71,10 @@
 </div>
 
 <div align="center" style='position:relative; width:100%; top:150px;'>
-<h3 align="center">Отзыв</h3>
-    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <form class='back' action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <br/>
+        <br/>
+        <h3 align="center">Отзыв</h3>
         <input type="hidden"  name="q" value="search">
         <p>Фамилия: <input type="Text" name="second_name" size=20  value="Евсеев"></p>
         <p>Имя: <input type="Text" name="first_name" size=20  value="Матвей"></p>
@@ -64,6 +99,8 @@
             <input type="Reset"  name="Reset"  value="Обновить">
             <input type="Submit" name="submit"  value="Отправить">
         </p>
+        <br/>
+        <br/>
     </form>
 </div>
 
